@@ -8,8 +8,9 @@ import json
 load_dotenv()
 
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+GUILD_ID = os.getenv("GUILD_ID")
 
-bot = commands.Bot(command_prefix="$", intents=discord.Intents.all())
+bot = commands.Bot(intents=discord.Intents.all())
 
 @bot.event
 async def on_ready():
@@ -17,7 +18,7 @@ async def on_ready():
     return await bot.change_presence(activity=discord.Activity(type=1, name='Foodie Meme Lover'))
 
 
-@bot.command()
+@bot.slash_command(name="meme", guild_ids=[GUILD_ID] )
 async def meme(ctx):
     fp = open("links.json")
     data = json.load(fp)
@@ -25,7 +26,7 @@ async def meme(ctx):
     embed = discord.Embed()
     embed.set_image(url=img_url)
     fp.close()
-    await ctx.channel.send(embed=embed)
+    await ctx.respond(embed=embed)
 
 
 bot.run(DISCORD_TOKEN)
