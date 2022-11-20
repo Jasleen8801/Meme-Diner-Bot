@@ -18,7 +18,7 @@ async def on_ready():
     return await bot.change_presence(activity=discord.Activity(type=1, name='Foodie Meme Lover'))
 
 
-@bot.slash_command(name="meme", guild_ids=[GUILD_ID] )
+@bot.slash_command(name="meme", guild_ids=[GUILD_ID], description="To get a random food related meme")
 async def meme(ctx):
     fp = open("links.json")
     data = json.load(fp)
