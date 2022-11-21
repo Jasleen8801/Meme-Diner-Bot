@@ -1,13 +1,13 @@
 import nextcord
 from nextcord.ext import commands
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import random
 import json
 
-load_dotenv()
+# load_dotenv()
 
-DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+DISCORD_TOKEN = os.environ["DISCORD_TOKEN"]
 GUILD_ID = 1028619109044326440
 
 bot = commands.Bot(intents=nextcord.Intents.all())
