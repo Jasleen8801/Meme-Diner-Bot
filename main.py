@@ -8,7 +8,7 @@ import json
 # load_dotenv()
 
 DISCORD_TOKEN = os.environ["DISCORD_TOKEN"]
-GUILD_ID = 1028619109044326440
+GUILD_ID = 1040237301814546462
 
 bot = commands.Bot(intents=nextcord.Intents.all())
 
