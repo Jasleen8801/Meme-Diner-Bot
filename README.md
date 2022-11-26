@@ -16,7 +16,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update your local repository.
 
 ## Deployment
-We've deployed the final version of this bot on replit, and you can visit - https://replit.com/@JasleenKaur28/Food-ex?v=.<br/>
+We've deployed the final version of this bot on replit, and you can visit - https://replit.com/@JasleenKaur28/Meme-Diner-Bot?v=1.<br/>
 Also to join our server, Foodie-fi, kindly join using the invite link - https://discord.gg/2t5THKP7<br/><br/>
 Note - As we're currently lacking the costs, the version of Discord bot uploaded on Replit will deactivate after one hour of activity, kindly run the file before running to the server. We apologize for the inconvenience.
 
